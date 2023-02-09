@@ -4,6 +4,7 @@ import { Dark } from 'quasar'
 
 Dark.set(true)
 
+// Props
 const email = ref('')
 const password = ref('')
 const firstname = ref('')
@@ -25,6 +26,7 @@ function charLimitValidation(min, max, message = null) {
     `Field must contain from ${min} to ${max} characters.`
 }
 
+// Events
 function onSubmit() {
   const payload = {
     email: email.value,
